@@ -1,0 +1,56 @@
+
+    <div class="indexContent">
+        
+        <div class="row">
+            <div class="col-xs-4">
+                <img height="100" src="./images/bb.png">
+            </div>
+            <div class="col-xs-8">
+                <div class="g_greetings">
+                     <p>Hi, <b>RAMEL</b></p>
+                    <p>Please select <br> your cart</p>
+                </div>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <br>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <button ng-click="create_cart()" class="btn btn-member"> Specify a name for the cart</button>
+                    </li>
+                    <li class="list-group-item" ng-repeat="a in [1,2,3,4]">
+                        <p class="cart-list pull-left">Jen {{$index}}</p><img class="pull-right" src="./images/ellipse.png">
+                        <div class="clearfix"></div>
+                    </li>
+                    
+                </ul>
+            </div>
+        
+        </div>
+
+
+    </div>
+
+ <!-- errand modal version 1.0 --> 
+<div ng-if="errandModal" class="modaloffset">
+    <div class="m_o_d_a_l">
+        <div ng-click="closeX()"class="closeme pull-right"></div>
+        <div class="clearfix"></div>
+        <div class="cart_modal_container">
+            <h4>SPECIFY A NAME FOR THE CART</h4>
+            <form class="grocery_modal">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name of cart...">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-green btn-block">CREATE</button>
+
+                </div>
+            </form>
+        </div>
+     </div> 
+
+</div>
+
